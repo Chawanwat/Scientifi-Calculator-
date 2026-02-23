@@ -70,4 +70,6 @@ ehthumbs.db
 *.ear
 
 # =====idea======
-*.idea
+.idea/
+build/
+.gradle/
