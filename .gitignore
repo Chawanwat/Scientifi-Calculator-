@@ -1,18 +1,18 @@
-.gradle
-build/classes
-build/generated
-build/reports
-build/tmp
+# ===== Gradle =====
+.gradle/
+build/
 !gradle/wrapper/gradle-wrapper.jar
 !**/src/main/**/build/
 !**/src/test/**/build/
-.kotlin
 
-### IntelliJ IDEA ###
-.idea/modules.xml
-.idea/jarRepositories.xml
-.idea/compiler.xml
-.idea/libraries/
+# ===== Kotlin =====
+.kotlin/
+
+# ===== Java =====
+*.class
+
+# ===== IntelliJ IDEA =====
+.idea/
 *.iws
 *.iml
 *.ipr
@@ -20,56 +20,45 @@ out/
 !**/src/main/**/out/
 !**/src/test/**/out/
 
-### Eclipse ###
+# ===== Eclipse =====
 .apt_generated
 .classpath
 .factorypath
 .project
-.settings
+.settings/
 .springBeans
 .sts4-cache
 bin/
 !**/src/main/**/bin/
 !**/src/test/**/bin/
 
-### NetBeans ###
+# ===== NetBeans =====
 /nbproject/private/
 /nbbuild/
 /dist/
 /nbdist/
 /.nb-gradle/
 
-### VS Code ###
+# ===== VS Code =====
 .vscode/
 
-### Mac OS ###
+# ===== OS =====
 .DS_Store
-
-# ===== Java =====
-*.class
-
-# ===== Logs =====
-*.log
-logs/
-
-# ===== Temp =====
-*.tmp
-*.temp
-
-# ===== OS Extra =====
 Thumbs.db
 ehthumbs.db
+
+# ===== Logs / Temp =====
+*.log
+logs/
+*.tmp
+*.temp
 
 # ===== Env =====
 .env
 .env.*
 
-# ===== Packaged =====
-*.jar
+# ===== Packaged (optional) =====
 *.war
 *.ear
-
-# =====idea======
-.idea/
-build/
-.gradle/
+# ถ้าคุณ "ไม่ตั้งใจ" เก็บ jar release ไว้ใน repo ให้เปิดบรรทัดนี้:
+# *.jar
